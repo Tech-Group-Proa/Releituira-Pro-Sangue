@@ -1,0 +1,489 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+main{
+    font-family: 'Poppins';
+    background-color: #E2E2E2;
+}
+
+@font-face{
+    font-family: 'Poppins';
+    src: url(./fontes/Poppins/Poppins-Regular.ttf);
+}
+/* CSS da header bootstrap */
+.navbar-brand:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.nav-link{
+    font-family: 'Poppins';
+    font-size: 17px;
+    color: black;
+    padding-top: 10px;
+}
+
+.nav-link:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+element.style {
+    color: #FF0000;
+    border-color: #FF0000;
+    width: 150px;
+}
+
+.btn-outline-success {
+    width: 160px;
+    --bs-btn-color: red;
+    --bs-btn-border-color: red;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: red;
+    --bs-btn-hover-border-color: red;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: red;
+    --bs-btn-active-border-color: red;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: red;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: red;
+    --bs-gradient: none;
+}
+
+#img_como_doar{
+    width: 100%;
+    height: 460px;
+    background-image: url(./img_index/img_como_doar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#img_como_doar button{
+    position: absolute;
+    width: 440px;
+    height: 230px;
+    background-color: red;
+    border-radius: 182px;
+    font-size: 60px;
+    font-family: 'Poppins';
+    color: white;
+    border:none;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+#sobre-nos{
+    width: 100%;
+    height: 510px;
+    background-image: url(./img_index/img_sobre_nos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sobre-nos h1{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+#sobre-nos p{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 24px;
+    color: white;
+    padding-left: 60px;
+    padding-top: 90px;
+}
+
+#agendamento{
+    width: 100%;
+    height: 460px;
+    background-image: url(./img_index/img_agendamento.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#agendamento button{
+    position: absolute;
+    width: auto;
+    height: 230px;
+    background-color: red;
+    border-radius: 182px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Poppins';
+    color: white;
+    border:none;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+#estoque_e_informes{
+    height: 600px;
+    width: 100%;
+    background-color: #E2E2E2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+/* CSS da caixa sobre estoque de sangue */
+#sangue{
+    width: 500px;
+    height: 400px;
+    background-image: linear-gradient(to bottom right, #276EB0, #185366 );
+    border-radius: 8px;
+}
+
+#sangue h1{
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#tipos_positivos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ab_positivo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#ab_positivo img{
+    width: auto;
+    height: 90px;
+}
+
+#ab_positivo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#a_positivo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#a_positivo img{
+    width: auto;
+    height: 90px;
+}
+
+#a_positivo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#b_positivo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#b_positivo img{
+    width: auto;
+    height: 90px;
+}
+
+#b_positivo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#o_positivo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#o_positivo img{
+    width: auto;
+    height: 90px;
+}
+
+#o_positivo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#tipos_negativos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+#ab_negativotivo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#ab_negativo img{
+    width: auto;
+    height: 90px;
+}
+
+#ab_negativo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#a_negativo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#a_negativo img{
+    width: auto;
+    height: 90px;
+}
+
+#a_negativo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#b_negativo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#b_negativo img{
+    width: auto;
+    height: 90px;
+}
+
+#b_negativo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#o_negativo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#o_negativo img{
+    width: auto;
+    height: 90px;
+}
+
+#o_negativo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#niveis_sangue{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#estavel{
+    width: 150px;
+    height: 60px;
+}
+
+#estavel img{
+    height: 60px;
+    width: auto;
+}
+
+#estavel p{
+    color: white;
+    float: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+#alerta{
+    width: auto;
+    height: 60px;
+}
+
+#alerta img{
+    height: 60px;
+    width: auto;
+}
+
+#alerta p{
+    color: white;
+    float: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+#critico{
+    width: auto;
+    height: 60px;
+}
+
+#critico img{
+    height: 60px;
+    width: auto;
+}
+
+#critico p{
+    color: white;
+    float: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+#att{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+/* CSS  da caixa de informes */
+#informes{
+    width: 550px;
+    height: 400px;
+    background-color: #40873F;
+    border-radius: 8px;
+}
+
+#informes h1{
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#aviso_gov{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#aviso_gov img{
+    width: 310px;
+    height: 200px;
+    margin-left: 540px;
+}
+
+#aviso_gov p{
+    width: 500px;
+    height: auto;
+    text-align: center;
+    margin-left: 450px;
+    
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #392D2D;
+}
+
+footer a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#logo_footer{
+    width: auto;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#links_footer_top{
+    width: 70%;
+    height:50%;
+    float: right;
+    display: flex;
+}
+
+#sobre-nos_footer{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-top: 50px;   
+}
+
+#sobre-nos_footer a{
+    margin-top: 18px !important;
+}
+
+#inicio_footer{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-top: 50px;   
+}
+
+#inicio_footer a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+
+#fale_conosco{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-top: 50px;   
+}
+
+#links_footer_bottom{
+    width: 70%;
+    height:50%;
+    float: right;
+    display: flex;
+}
+
+#imprensa{
+    width: 340px;
+    height: 150px;
+    text-align: left;
+    color: white;
+}
+
+#redes_sociais{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-left: 150px;
+}
+
+#redes_sociais img{
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
