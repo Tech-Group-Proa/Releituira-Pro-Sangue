@@ -9,7 +9,12 @@ main{
     background-color: #E2E2E2;
 }
 
-
+header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
 
 @font-face{
     font-family: 'Poppins';
@@ -62,15 +67,19 @@ element.style {
 #img_como_doar{
     position: relative;
     width: 100%;
-    height: 460px;
-    background-image: url(./img_index/img_como_doar.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 500px;
     
 }
 
+#img_como_doar img{
+    position: relative;
+    float: right;
+    height: 460px;
+    margin-top: 40px;
+}
+
 #como_doar{
-    position: absolute;
+    position: relative;
     width: 440px;
     height: 230px;
     background-color: red;
@@ -80,12 +89,13 @@ element.style {
     color: white;
     border:none;
     font-weight: 600;
-    margin-top: 100px;
-    margin-left: 60px;
+    top: 140px;
+    left: 60px;
+
 }
 
 #acessibilidade{
-    float: right;
+    position: fixed;
     width: 102px;
     height: 180px;
     background-color: #010101;opacity: .7;
@@ -95,6 +105,9 @@ element.style {
     justify-content: space-around;
     border-radius: 10px 0px 0px 10px;
     margin-top: 50px;
+    right: 0;
+    top: 30px;
+    z-index: 1;
 }
 
 label{
