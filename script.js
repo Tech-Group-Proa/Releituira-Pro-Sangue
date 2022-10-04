@@ -2,6 +2,7 @@ const html = document.querySelector("html")
 const checkbox = document.getElementById("darkmode-toggle")
 let sobre = document.getElementById("sobre-nos")
 let gov = document.getElementById("img_gov")
+let logo_prosangue = document.getElementById("logo_prosangue")
 
 const getStyle = (element, style) => 
     window
@@ -32,10 +33,12 @@ const changeColors = (colors) => {
 function mudar({target}){
     if (target.checked){
         gov.setAttribute("src", "./img_index/logo_sp_dark.png")
+        logo_prosangue.setAttribute("src", "./img_index/logo_prosangue._footer.png")
         sobre.style.backgroundImage = "url(./img_index/Sobre-nos-img.png)"
         changeColors(darkMode)
     }else{
         gov.setAttribute("src", "./img_index/logo_sp.png")
+        logo_prosangue.setAttribute("src", "./img_index/logo_prosangue_header.png")
         sobre.style.backgroundImage = "url(./img_index/img_sobre_nos.jpg)"
         changeColors(initialColors)
     }
