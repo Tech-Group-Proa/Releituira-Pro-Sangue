@@ -1,6 +1,7 @@
 const html = document.querySelector("html")
 const checkbox = document.getElementById("darkmode-toggle")
 let sobre = document.getElementById("sobre-nos")
+let gov = document.getElementById("img_gov")
 
 const getStyle = (element, style) => 
     window
@@ -30,9 +31,11 @@ const changeColors = (colors) => {
 }
 function mudar({target}){
     if (target.checked){
+        gov.setAttribute("src", "./img_index/logo_sp_dark.png")
         sobre.style.backgroundImage = "url(./img_index/Sobre-nos-img.png)"
         changeColors(darkMode)
     }else{
+        gov.setAttribute("src", "./img_index/logo_sp.png")
         sobre.style.backgroundImage = "url(./img_index/img_sobre_nos.jpg)"
         changeColors(initialColors)
     }
