@@ -95,8 +95,8 @@ element.style {
 
 #acessibilidade{
     position: fixed;
-    width: 120px;
-    height: 180px;
+    width: 90px;
+    height: 170px;
     background-color: #010101;opacity: .7;
     display: flex;
     flex-direction: column;
@@ -105,7 +105,7 @@ element.style {
     border-radius: 10px 0px 0px 10px;
     margin-top: 50px;
     right: 0;
-    top: 30px;
+    top: 90px;
     z-index: 1;
 }
 
@@ -130,16 +130,12 @@ label::after{
     top: 5px;
     bottom: 5px;
     left: 5px;
-    background:linear-gradient(180deg, #c9c4bd, #fff9f0);
+    background:linear-gradient(180deg, #ffcc89, #d8860b);
     border-radius: 180px;
     box-shadow: 0px 5px 15px rgba(255,255,255,0.2);
     transition: 0.3s;
 }
 
-/*.bg-light {
-    --bs-bg-opacity: 1;
-    background-color: #292929!important;
- } */
 
 #modo_escuro{
     width: 50px;
@@ -184,328 +180,6 @@ label:active:after{
     font-weight: 600;
 }
 
-#sobre-nos{
-    position: relative;
-    width: 100%;
-    height: 510px;
-    background-image: url(./img_index/img_sobre_nos.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#sobre-nos h1{
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 60px;
-    color: white;
-    font-weight: 600;
-    padding-top: 20px;
-}
-
-#sobre-nos p{
-    text-align: center;
-    font-family: 'Poppins';
-    font-size: 24px;
-    color: white;
-    padding-left: 60px;
-    padding-top: 90px;
-}
-
-#agendamento{
-    position: relative;
-    width: 100%;
-    height: 460px;
-    background-image: url(./img_index/img.agendamento.png);
-    background-position: 100% 0%;
-    background-color: #d9d9d9;
-    background-repeat: no-repeat;
-}
-
-#agendamento button{
-    position: absolute;
-    width: 550px;
-    height: 230px;
-    background-color: red;
-    border-radius: 182px;
-    text-align: center;
-    font-size: 60px;
-    font-family: 'Poppins';
-    color: white;
-    border:none;
-    font-weight: 600;
-    margin-top: 100px;
-    left:10%;
-}
-
-#estoque_e_informes{
-    position: relative;
-    height: 30rem;
-    width: 100%;
-    background-color: #E2E2E2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-/* CSS da caixa sobre estoque de sangue */
-#sangue{
-    width: 40%;
-    height: 25rem;
-    background-image: linear-gradient(to bottom right, #276EB0, #185366 );
-    border-radius: 8px;
-}
-
-#sangue h1{
-    color: white;
-    text-align: center;
-    border-bottom: 1px solid white;
-}
-
-#tipos_positivos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#ab_positivo{
-    width: 120px;
-    height: 100px;
-    float: left;
-}
-
-#ab_positivo img{
-    width: auto;
-    height: 90px;
-}
-
-#ab_positivo p{
-    text-align: center;
-    color: white;
-    font-weight: 600;
-}
-
-#a_positivo{
-    width: 120px;
-    height: 100px;
-    float: left;
-}
-
-#a_positivo img{
-    width: auto;
-    height: 90px;
-}
-
-#a_positivo p{
-    text-align: center;
-    color: white;
-    font-weight: 600;
-}
-
-#b_positivo{
-    width: 120px;
-    height: 100px;
-    float: left;
-}
-
-#b_positivo img{
-    width: auto;
-    height: 90px;
-}
-
-#b_positivo p{
-    text-align: center;
-    color: white;
-    font-weight: 600;
-}
-
-#o_positivo{
-    width: 120px;
-    height: 100px;
-    float: left;
-}
-
-#o_positivo img{
-    width: auto;
-    height: 90px;
-}
-
-#o_positivo p{
-    text-align: center;
-    color: white;
-    font-weight: 600;
-}
-
-#tipos_negativos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid white;
-}
-
-#ab_negativotivo{
-    width: 120px;
-    height: 100px;
-    float: left;
-}
-
-#ab_negativo img{
-    width: auto;
-    height: 90px;
-}
-
-#ab_negativo p{
-    text-align: center;
-    color: white;
-    font-weight: 600;
-}
-
-#a_negativo{
-    width: 120px;
-    height: 100px;
-    float: left;
-}
-
-#a_negativo img{
-    width: auto;
-    height: 90px;
-}
-
-#a_negativo p{
-    text-align: center;
-    color: white;
-    font-weight: 600;
-}
-
-#b_negativo{
-    width: 120px;
-    height: 100px;
-    float: left;
-}
-
-#b_negativo img{
-    width: auto;
-    height: 90px;
-}
-
-#b_negativo p{
-    text-align: center;
-    color: white;
-    font-weight: 600;
-}
-
-#o_negativo{
-    width: 120px;
-    height: 100px;
-    float: left;
-}
-
-#o_negativo img{
-    width: auto;
-    height: 90px;
-}
-
-#o_negativo p{
-    text-align: center;
-    color: white;
-    font-weight: 600;
-}
-
-#niveis_sangue{
-    width: 100%;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#estavel{
-    width: 150px;
-    height: 60px;
-}
-
-#estavel img{
-    height: 60px;
-    width: auto;
-}
-
-#estavel p{
-    color: white;
-    float: right;
-    padding-top: 20px;
-    padding-right: 10px;
-}
-
-#alerta{
-    width: auto;
-    height: 60px;
-}
-
-#alerta img{
-    height: 60px;
-    width: auto;
-}
-
-#alerta p{
-    color: white;
-    float: right;
-    padding-top: 20px;
-    padding-right: 10px;
-}
-
-#critico{
-    width: auto;
-    height: 60px;
-}
-
-#critico img{
-    height: 60px;
-    width: auto;
-}
-
-#critico p{
-    color: white;
-    float: right;
-    padding-top: 20px;
-    padding-right: 10px;
-}
-
-#att{
-    color: white;
-    text-align: center;
-    padding-top: 15px;
-}
-/* CSS  da caixa de informes */
-#informes{
-    width: 40%;
-    height: 25rem;
-    background-color: #40873F;
-    border-radius: 8px;
-}
-
-#informes h1{
-    color: white;
-    text-align: center;
-    border-bottom: 1px solid white;
-}
-
-#aviso_gov{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#aviso_gov img{
-    width: 310px;
-    height: 200px;
-}
-
-#aviso_gov p{
-    width: 500px;
-    height: auto;
-    text-align: center;
-}
 
 footer{
     width: 100%;
@@ -600,7 +274,7 @@ footer a{
     width: 100%;
     display: flex;
     position: fixed;
-    top: 4.7rem;
+    top: 5.7rem;
     justify-content: space-evenly;
     background-color: #dadada;
     padding: 0.8%;
@@ -650,6 +324,7 @@ footer a{
 .reqbas{
     display: grid;
     grid-template-columns: 3fr 2fr;
+    height: 550px;
 }
 .reqbas_esquerda{
     display: flex;
@@ -671,6 +346,12 @@ footer a{
 
 .itens{
     display: flex;
+}
+
+.itens_img img{
+    height: 43px;
+    width: auto;
+    margin-bottom: 3px;
 }
 
 .reqbas_direita{
