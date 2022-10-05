@@ -1,0 +1,1007 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    
+}
+
+main{
+    font-family: 'Poppins';
+    background-color: #fff;
+}
+
+header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+
+}
+
+@font-face{
+    font-family: 'Poppins';
+    src: url(./fontes/Poppins/Poppins-Regular.ttf);
+}
+/* CSS da header bootstrap */
+
+.navbar-brand:hover{
+    color: rgb(231, 0, 0);
+}
+
+.nav-link{
+    font-family: 'Poppins';
+    font-size: 17px;
+    color: black;
+    padding-top: 10px;
+}
+
+.nav-link:hover{
+    color: rgb(231, 0, 0);
+}
+
+
+element.style {
+    color: rgb(231, 0, 0);
+    border-color: rgb(231, 0, 0);
+    width: 150px;
+}
+
+.btn-outline-success {
+    width: 160px;
+    --bs-btn-color: red;
+    --bs-btn-border-color: red;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: red;
+    --bs-btn-hover-border-color: red;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: red;
+    --bs-btn-active-border-color: red;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: red;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: red;
+    --bs-gradient: none;
+}
+
+#img_como_doar{
+    position: relative;
+    width: 100%;
+    height: 460px;
+    background-image: url(./img_index/bg-mlh.png);
+    background-repeat: no-repeat;
+    background-position: 97%;
+    background-color: #d9d9d9;
+    background-attachment: scroll;
+    }
+
+
+
+#como_doar{
+    position: relative;
+    width: 400px;
+    height: 230px;
+    background-color: red;
+    border-radius: 182px;
+    font-size: 50px;
+    font-family: 'Poppins';
+    color: white;
+    border:none;
+    font-weight: 600;
+    top: 140px;
+    left: 14%;
+
+}
+
+#acessibilidade{
+    position: fixed;
+    width: 120px;
+    height: 180px;
+    background-color: #010101;opacity: .7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 50px;
+    right: 0;
+    top: 30px;
+    z-index: 1;
+}
+
+label{
+    width: 70px;
+    height: 40px;
+    position: relative;
+    display: block;
+    background-color: #aaaaaa;
+    border-radius: 100px;
+    box-shadow: inset 0px 5px 15px  rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+label::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    background:linear-gradient(180deg, #c9c4bd, #fff9f0);
+    border-radius: 180px;
+    box-shadow: 0px 5px 15px rgba(255,255,255,0.2);
+    transition: 0.3s;
+}
+
+/*.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: #292929!important;
+ } */
+
+#modo_escuro{
+    width: 50px;
+    height: 50px;
+}
+
+#darkmode-toggle{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#darkmode-toggle:checked + label{
+    background-color: #242424;
+}
+
+#darkmode-toggle:checked + label:after{
+    left: 8px;
+    transform: translateX(90%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+}
+
+label:active:after{
+    width: 30px;
+}
+
+#aumentar_fonte{
+    width: 40px;
+    height: auto;
+    opacity: 100%;
+    border-radius: 200px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#diminuir_fonte{
+    width: 40px;
+    height: auto;
+    opacity: 100%;
+    border-radius: 200px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#sobre-nos{
+    position: relative;
+    width: 100%;
+    height: 510px;
+    background-image: url(./img_index/img_sobre_nos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sobre-nos h1{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+#sobre-nos p{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 24px;
+    color: white;
+    padding-left: 60px;
+    padding-top: 90px;
+}
+
+#agendamento{
+    position: relative;
+    width: 100%;
+    height: 460px;
+    background-image: url(./img_index/img.agendamento.png);
+    background-position: 100% 0%;
+    background-color: #d9d9d9;
+    background-repeat: no-repeat;
+}
+
+#agendamento button{
+    position: absolute;
+    width: 550px;
+    height: 230px;
+    background-color: red;
+    border-radius: 182px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Poppins';
+    color: white;
+    border:none;
+    font-weight: 600;
+    margin-top: 100px;
+    left:10%;
+}
+
+#estoque_e_informes{
+    position: relative;
+    height: 30rem;
+    width: 100%;
+    background-color: #E2E2E2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+/* CSS da caixa sobre estoque de sangue */
+#sangue{
+    width: 40%;
+    height: 25rem;
+    background-image: linear-gradient(to bottom right, #276EB0, #185366 );
+    border-radius: 8px;
+}
+
+#sangue h1{
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#tipos_positivos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ab_positivo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#ab_positivo img{
+    width: auto;
+    height: 90px;
+}
+
+#ab_positivo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#a_positivo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#a_positivo img{
+    width: auto;
+    height: 90px;
+}
+
+#a_positivo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#b_positivo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#b_positivo img{
+    width: auto;
+    height: 90px;
+}
+
+#b_positivo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#o_positivo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#o_positivo img{
+    width: auto;
+    height: 90px;
+}
+
+#o_positivo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#tipos_negativos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+#ab_negativotivo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#ab_negativo img{
+    width: auto;
+    height: 90px;
+}
+
+#ab_negativo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#a_negativo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#a_negativo img{
+    width: auto;
+    height: 90px;
+}
+
+#a_negativo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#b_negativo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#b_negativo img{
+    width: auto;
+    height: 90px;
+}
+
+#b_negativo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#o_negativo{
+    width: 120px;
+    height: 100px;
+    float: left;
+}
+
+#o_negativo img{
+    width: auto;
+    height: 90px;
+}
+
+#o_negativo p{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+#niveis_sangue{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#estavel{
+    width: 150px;
+    height: 60px;
+}
+
+#estavel img{
+    height: 60px;
+    width: auto;
+}
+
+#estavel p{
+    color: white;
+    float: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+#alerta{
+    width: auto;
+    height: 60px;
+}
+
+#alerta img{
+    height: 60px;
+    width: auto;
+}
+
+#alerta p{
+    color: white;
+    float: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+#critico{
+    width: auto;
+    height: 60px;
+}
+
+#critico img{
+    height: 60px;
+    width: auto;
+}
+
+#critico p{
+    color: white;
+    float: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+#att{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+/* CSS  da caixa de informes */
+#informes{
+    width: 40%;
+    height: 25rem;
+    background-color: #40873F;
+    border-radius: 8px;
+}
+
+#informes h1{
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+#aviso_gov{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aviso_gov img{
+    width: 310px;
+    height: 200px;
+}
+
+#aviso_gov p{
+    width: 500px;
+    height: auto;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #392D2D;
+}
+
+footer a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#logo_footer{
+    width: auto;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#links_footer_top{
+    width: 70%;
+    height:50%;
+    float: right;
+    display: flex;
+}
+
+#sobre-nos_footer{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-top: 50px;   
+}
+
+#sobre-nos_footer a{
+    margin-top: 18px !important;
+}
+
+#inicio_footer{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-top: 50px;   
+}
+
+#inicio_footer a{
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+
+#fale_conosco{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-top: 50px;   
+}
+
+#links_footer_bottom{
+    width: 70%;
+    height:50%;
+    float: right;
+    display: flex;
+}
+
+#imprensa{
+    width: 340px;
+    height: 150px;
+    text-align: left;
+    color: white;
+}
+
+#redes_sociais{
+    width: 250px;
+    height: 150px;
+    text-align: left;
+    color: white;
+    margin-left: 150px;
+}
+
+#redes_sociais img{
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+/*  ============= CSS DA PÁGINA DE COMO DOAR =============*/
+
+/* ============= NAV BAR =============*/
+.sub_nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 4.7rem;
+    justify-content: space-evenly;
+    background-color: #dadada;
+    padding: 0.8%;
+    align-items: center;
+    text-align: center;
+}
+.sub_nav a{
+    text-decoration: none;
+}
+#nav_cont{
+    padding: 0.8%;
+    width: 120%;
+    transition: all 300ms;
+    border-radius: 5px;
+    color: #f1f1f1;
+}
+#nav_cont:hover{
+    filter: brightness(110%);
+}
+#nav_cont b{
+    padding: 2% 0 2% 0;
+}
+.cont1{
+    background-color: #e93e3e;
+}
+.cont2{
+    background-color: #35ca5b;
+}
+.cont3{
+    background-color: #3ea5e9;
+}
+
+/* ============= Conteúdo  =============*/
+
+#ghost{
+    height: 8rem;
+}
+.tit_princ{
+    text-align: center;
+    margin: 3% 0 3% 0;
+    color: #242424;
+}
+#contprinc{
+    width: 88%;
+    margin: 0 auto;
+}
+.reqbas{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.reqbas_esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.reqbas_esquerda p{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.reqbas_esquerda .itens_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+}
+
+.itens{
+    display: flex;
+}
+
+.reqbas_direita{
+    border-radius: 8px;
+    height: auto;
+    border: 2px solid #97938d;
+}
+.reqbas_direita p{
+    font-size: 23px; 
+}
+.tit_direita{
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #97938d;
+}
+.reqbas_direita_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.reqbas_direita_cont1{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+}
+.box2{
+    margin: 0 auto;
+    width: 90%;
+    padding-left: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.img_box1{
+    width: 100%;
+    height: 100%;
+    
+}
+.img_box1 img{
+    width: 90%;
+    height: 90%;
+}
+.tit_naopode{
+    margin-top: 3%;
+    color: #FFF;
+    background-color: #3ea5e9;
+    padding-left: 3%;
+    width: 100%;
+    padding: 0 2% 0 3%;
+    text-align: left;
+    transition: 0.4s;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.tit_naopode:after {
+    content: '\002B';
+    color: #fff;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+    color: white;
+  }
+.tit_naopode:hover{
+    filter: brightness(110%);
+}
+
+.naopode_cont{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    background-color: #837b7b;
+    color: #FFF;
+}
+.naopode_cont img{
+    filter: invert();
+}
+.condicoes{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #97938d;
+    padding-top: 1%;
+}
+.condicoes .itens{
+    display: flex;
+    align-items: center;
+}
+.condicoes .itens p{
+    padding-top: 1%;
+    padding-left: 2%;
+    font-size: 20px;
+}
+.condicoes .itens_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.condicoes .itens_img img{
+    width: 100%;
+    height: 100%;
+}
+.tit_naodoe{
+    text-align: center;
+    padding: 2%;
+}
+.tit_naodoe hr{
+    width: 20%;
+    margin: 0 auto;
+}
+.atencao{
+    top:-10px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.atencao text{
+    color: red;
+}
+
+.tit_pos{
+    text-align: center;
+    margin: 3% 0 3% 0;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.box_pos{
+    width: 33.33%;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#logo_pos{
+    height: 15rem;
+    width: 70%;
+    border-radius: 50px;
+}
+.logo1,.logo2,.logo3,.logo4,.logo5,.logo6{
+    background-size: 80%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.logo1{
+    background-color: #F38D14;
+    background-image: url(./img_index/logo1.png);
+}
+.logo2{
+    background-color: #23AA40;
+    background-image: url(./img_index/logo6.png);
+}
+.logo3{
+    background-color: #5E2129;
+    background-image: url(./img_index/logo5.png);
+
+}
+.logo4{
+    background-color: #0094FF;
+    background-image: url(./img_index/logo2.png);
+}
+.logo5{
+    background-color: #F4C212;
+    background-image: url(./img_index/logo3.png);
+}
+.logo6{
+    background-color: #6B442F;
+    background-image: url(./img_index/logo4.png);
+}
+.texto_pos{
+    width: 70%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+}
+.texto_pos1{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width:576px){
+    *{
+        overflow-x: hidden;
+    }
+    #acessibilidade{
+        top: 20rem;
+        width: 15%;
+    }
+    .sub_nav{
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        top: 4.5rem;
+        padding: 0;
+    }
+    .sub_nav a{
+        width: 100%;
+        
+    }
+    #contprinc{
+        width: 98%;
+    }
+    #nav_cont{
+        text-align: center;
+        width: 100%;
+        border-radius: 0;
+        padding: 2%;
+    }
+    #ghost{
+        height: 5rem;
+    }
+    .reqbas{
+        display: flex;
+        flex-direction: column;
+    }
+    .reqbas_esquerda{
+        justify-content: space-between;
+    }
+    .reqbas_esquerda .itens_img{
+        display: none;
+    }
+    .reqbas_esquerda .itens{
+        border-bottom: 1px solid rgb(129, 129, 129);
+        
+    }
+    .reqbas_esquerda .itens p{
+        margin: 1%;
+        padding: 0;
+    }
+    .reqbas_direita{
+        border: 0;
+        margin-top: 2%;
+    }
+    .tit_direita h3{
+        font-size: 40px;
+    }
+    .reqbas_direita_cont1{
+        display: flex;
+        flex-direction: row;
+    }
+    .reqbas_direita_cont1 .box2{
+        text-align: left;
+    }
+    .condicoes .itens_img{
+        display: none;
+    }
+    .naopode_cont{
+        background-color: #837b7b;
+        color: #FFF;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .box_pos{
+        width: 100%;
+        text-align: left;
+    }
+    #logo_pos{
+        height: 7rem;
+        width: 50%;
+        border-radius: 20px;
+    }
+    .logo1,.logo2,.logo3,.logo4,.logo5,.logo6{
+        background-size: 40%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+    .texto_pos{
+        text-align: center;
+        width: 100%;
+    }
+    .texto_pos1{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:1200px){
+    .sub_nav{
+        top: 8rem;
+    }
+    #ghost{
+        height: 10rem;
+    }
+}
+@media only screen and (max-width:989px){
+    #contprinc{
+        width: 98%;
+    }
+    .sub_nav{
+        top: 4.5rem;
+    }
+    #ghost{
+        height: 6rem;
+    }
+    .box1 .img_box1{
+        width: 100%;
+        height: 100%;
+    }
+}

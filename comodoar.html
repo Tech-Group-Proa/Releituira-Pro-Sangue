@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PróSangue</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style_comodoar.css" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img_index/logosangue.png" alt="Bootstrap" width="180" height="auto"
+                            style="opacity: 1;">
+                    </a>
+                    <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Início</a>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Doação</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Hemocentros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Fale Conosco</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Doe Agora</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </nav>
+        </header>
+
+        <div id="acessibilidade">
+            <input type="checkbox" id="darkmode-toggle" />
+            <label for="darkmode-toggle" onkeypress="modo_escuro()"></label>
+            <button id="aumentar_fonte">A+</button>
+            <button id="diminuir_fonte">A-</button>
+        </div>
+
+        <nav class="sub_nav">
+            <a href="#">
+                <div id="nav_cont" class="cont1">
+                    <b>Requisitos para doação</b>
+                </div>
+            </a>
+            <a href="#">
+                <div id="nav_cont" class="cont2">
+                    <b>Cuidados pós-doação</b>
+                </div>
+            </a>
+            <a href="#">
+                <div id="nav_cont" class="cont3">
+                    <b>Quem não pode doar</b>
+                </div>
+            </a>
+        </nav>
+        <div id="ghost"></div>
+        <div class="tit_princ">
+            <h2>Requisitos básicos para doação</h2>
+        </div>
+        <div id="contprinc">
+            <section class="reqbas">
+                <div class="reqbas_esquerda">
+                    <div class="itens">
+                        <div class="itens_img"><img src="#" alt="#"></div>
+                        <p>Levar documento oficial de identidade com foto;</p>
+                    </div>
+                    <div class="itens">
+                        <div class="itens_img"><img src="#" alt="#"></div>
+                        <p>Ter entre 16 a 69 anos.(até 18 com consentimento dos pais);</p>
+                    </div>
+                    <div class="itens">
+                        <div class="itens_img"><img src="#" alt="#"></div>
+                        <p>Levar documento oficial de identidade com foto;</p>
+                    </div>
+                    <div class="itens">
+                        <div class="itens_img"><img src="#" alt="#"></div>
+                        <p>Pesar mais de 50kg;</p>
+                    </div>
+                    <div class="itens">
+                        <div class="itens_img"><img src="#" alt="#"></div>
+                        <p>Evitar gordura nas últimas 3 horas</p>
+                    </div>
+                    <div class="itens">
+                        <div class="itens_img"><img src="#" alt="#"></div>
+                        <p>Não ter ingerido bebida alcoólica</p>
+                    </div>
+                </div>
+                <aside class="reqbas_direita">
+                    <div class="tit_direita">
+                        <h3>Tempo entre doação</h3>
+                    </div>
+                    <div class="reqbas_direita_container">
+                        <div class="reqbas_direita_cont1">
+                            <div class="box1">
+                                <div class="img_box1"><img src="img_index/homem.png" alt="homem"></div>
+                            </div>
+                            <div class="box2">
+                                <h4>Homem</h4>
+                                <p>a cada 60 dias. Máximo de 4 doações a cada 12 meses</p>
+                            </div>
+                        </div>
+                        <div class="reqbas_direita_cont1">
+                            <div class="box1">
+                                <div class="img_box1"><img src="img_index/mulher.png" alt="homem"></div>
+                            </div>
+                            <div class="box2">
+                                <h4>Mulher</h4>
+                                <p>a cada 90 dias. Máximo de 3 doações a cada 12 meses</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </aside>
+            </section>
+            <section class="naopodedoar">
+                <button class="tit_naopode">
+                    <h5>Quem não pode doar?</h5>
+                </button>
+                <div class="naopode_cont">
+                    <div class="condicoes">
+                        <div class="itens">
+                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <p>Está com gripe, febre ou infecção;</p>
+                        </div>
+                        <div class="itens">
+                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <p>É portador de sífilis(cacro), Malária ou doença de Chagas;</p>
+                        </div>
+                        <div class="itens">
+                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <p>É alcoólico crônico;</p>
+                        </div>
+                        <div class="itens">
+                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <p>Ingeriu álcool até 3 dias antes da doação;</p>
+                        </div>
+                        <div class="itens">
+                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <p>Possui comportamento de risco para doenças transmissíveis;</p>
+                        </div>
+                        <div class="itens">
+                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <p>Foi ou é usuário de drogas injetáveis;</p>
+                        </div>
+                        <div class="itens">
+                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <p>Tenha contraído hepatite após 10 anos de idade</p>
+                        </div>
+                        <div class="itens">
+                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <p>Tenha feito: endoscopia, tatuagem ou piercing em período menor que 12 meses;</p>
+                        </div>
+                    </div>
+                    <div class="naodoe">
+                        <div class="tit_naodoe">
+                            <h3>Na dúvida, não doe!</h3>
+                        </div>
+                        <div class="atencao"><text>Atenção: </text>"Honestidade também salva vidas"</div>
+                    </div>
+                </div>
+                <script>
+                    var acc = document.getElementsByClassName("tit_naopode");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.maxHeight) {
+                                panel.style.maxHeight = null;
+                            } else {
+                                panel.style.maxHeight = panel.scrollHeight + "px";
+                            }
+                        });
+                    }
+                </script>
+            </section>
+            <section class="posdoacao">
+                <div class="tit_pos">
+                    <h2>Principais cuidados pós-doação</h2>
+                </div>
+                <div class="pos_cont">
+                    <div class="row">
+                        <div class="box_pos">
+                            <div id="logo_pos" class="logo1"></div>
+                            <div class="texto_pos">Evitar <b>esforços físicos</b> exagerados pelo menos por 12 horas</b>
+                            </div>
+                        </div>
+                        <div class="box_pos">
+                            <div id="logo_pos" class="logo2"></div>
+                            <div class="texto_pos">Manter o <b>curativo</b> no local da injeção por pelo menos 4 horas
+                            </div>
+                        </div>
+                        <div class="box_pos">
+                            <div id="logo_pos" class="logo3"></div>
+                            <div class="texto_pos">Evitar <b>bebidas alcoólicas por 12 horas</b></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box_pos">
+                            <div id="logo_pos" class="logo4"></div>
+                            <div class="texto_pos">Aumentar a injestão de <b>líquidos</b></div>
+                        </div>
+                        <div class="box_pos">
+                            <div id="logo_pos" class="logo5"></div>
+                            <div class="texto_pos1">Evitar dirigir <b>veículos de grande porte,</b> trabalhar em
+                                andaimes e praticar paraquedismo ou mergulho</div>
+                        </div>
+                        <div class="box_pos">
+                            <div id="logo_pos" class="logo6"></div>
+                            <div class="texto_pos"><b>Não fumar</b> por cerca de 2 horas</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <footer>
+            <img src="./img_index/logo_prosangue._footer.png" alt="" id="logo_footer">
+            <section id="links_footer_top">
+                <div id="sobre-nos_footer">
+                    <h3>Sobre Nós</h3>
+                    <a>Ouvidoria</a> <br />
+                    <a>Contratações / Covid-19</a> <br />
+                    <a>Política de qualidade</a>
+                </div>
+
+                <div id="inicio_footer">
+                    <h3><a href="#">Início</a></h3>
+                    <a href="#">Doação</a> <br />
+                    <a href="#">Hemocentros</a> <br />
+                    <a href="#">Como doar?</a>
+                </div>
+
+                <div id="fale_conosco">
+                    <h3>Fale Conosco</h3>
+                    <p>(11) 4573-7800</p>
+                    <p>faleconosco@prosangue.com.br</p>
+                </div>
+            </section>
+            <section id="links_footer_bottom">
+                <div id="imprensa">
+                    <h3>Imprensa</h3>
+                    <p>imprensafps@prosangue.sp.gov.br</p>
+                    <p>silvia.gallo@prosangue.sp.gov.br</p>
+                </div>
+                <div id="redes_sociais">
+                    <h3>Redes Sociais</h3>
+                    <a href="#"><img src="./img_index/logo_insta.png" alt=""></a>
+                    <a href="#"> <img src="./img_index/logo_face.png" alt=""> </a>
+                    <a href="#"> <img src="./img_index/logo_tt.png" alt=""> </a>
+                    <a href="#"> <img src="./img_index/logo_yt.png" alt=""> </a>
+                </div>
+            </section>
+        </footer>
+
+
+
+    </main>
+</body>
+
+</html>
