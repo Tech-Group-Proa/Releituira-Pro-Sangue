@@ -472,6 +472,7 @@ footer a{
 }
 footer a:hover{
     color: #09f;
+    transition: all 0.4s;
 }
 #logo_footer{
     width: auto;
@@ -495,6 +496,7 @@ footer a:hover{
 #sobre-nos_footer a{
     margin-top: 18px !important;
 }
+
 #inicio_footer{
     width: 250px;
     height: 150px;
@@ -506,6 +508,10 @@ footer a:hover{
     text-decoration: none;
     color: white;
     margin-top: 10px;
+}
+#inicio_footer a:hover{
+    color: #09f;
+
 }
 #fale_conosco{
     width: 250px;
@@ -537,4 +543,11 @@ footer a:hover{
     height: 50px;
     width: auto;
     cursor: pointer;
+    border-radius: 10px;
+}
+#redes_sociais img:hover{
+    background-color: #185366;
+}
+@media only screen and (max-width:576px){
+    
 }

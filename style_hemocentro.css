@@ -82,7 +82,7 @@ element.style {
 #img_hemocentro{
     width: 100%;
     height: 100%;
-    opacity: 80%;
+    opacity: 65%;
 }
 
 #hemocentro-titulo {
@@ -183,9 +183,6 @@ element.style {
     transition: all 0.2s ease-out;
     background-color: #837b7b;
     color: #FFF;
-}
-.naopode_cont img{
-    filter: invert();
 }
 .condicoes{
     width: 95%;
@@ -305,102 +302,93 @@ label:active:after {
     font-weight: 600;
 }
 
-footer {
+/* =================== Footer ===================== */
+
+footer{
     width: 100%;
     height: 400px;
     background-color: #392D2D;
 }
-
-footer a {
+footer a{
     cursor: pointer;
     text-decoration: none;
+    color: #fff;
 }
-
-#logo_footer {
+footer a:hover{
+    color: #09f;
+    transition: all 0.4s;
+}
+#logo_footer{
     width: auto;
     height: 70px;
     margin-top: 15px;
     margin-left: 20px;
 }
-
-#links_footer_top {
+#links_footer_top{
     width: 70%;
-    height: 50%;
+    height:50%;
     float: right;
     display: flex;
 }
-
-#sobre-nos_footer {
+#sobre-nos_footer{
     width: 250px;
     height: 150px;
     text-align: left;
     color: white;
-    margin-top: 50px;
+    margin-top: 50px;   
 }
-
-#sobre-nos_footer a {
+#sobre-nos_footer a{
     margin-top: 18px !important;
-    color: white;
-    text-decoration: none;
 }
 
-#inicio_footer {
+#inicio_footer{
     width: 250px;
     height: 150px;
     text-align: left;
     color: white;
-    margin-top: 50px;
+    margin-top: 50px;   
 }
-
-#inicio_footer a {
+#inicio_footer a{
     text-decoration: none;
     color: white;
     margin-top: 10px;
 }
+#inicio_footer a:hover{
+    color: #09f;
 
-#fale_conosco {
+}
+#fale_conosco{
     width: 250px;
     height: 150px;
     text-align: left;
     color: white;
-    margin-top: 50px;
+    margin-top: 50px;   
 }
-
-#fale_conosco a {
-    color: white;
-    text-decoration: none;
-}
-
-#links_footer_bottom {
+#links_footer_bottom{
     width: 70%;
-    height: 50%;
-    color: white;
-    text-decoration: none;
+    height:50%;
     float: right;
     display: flex;
 }
-
-#imprensa {
+#imprensa{
     width: 340px;
     height: 150px;
     text-align: left;
     color: white;
 }
-
-#imprensa a {
-    color: white;
-}
-
-#redes_sociais {
+#redes_sociais{
     width: 250px;
     height: 150px;
     text-align: left;
     color: white;
     margin-left: 150px;
 }
-
-#redes_sociais img {
+#redes_sociais img{
     height: 50px;
     width: auto;
     cursor: pointer;
+    border-radius: 10px;
+}
+#redes_sociais img:hover{
+    background-color: #185366;
 }
