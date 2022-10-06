@@ -2,11 +2,18 @@
     padding: 0;
     border: 0;
     margin: 0;
+    text-decoration: none;
+}
+html{
+    --body-bg: #E2E2E2;
+    --comodoar-bg: #d9d9d9;
+    --header-bg: #f1f1f1;
+    --body-color: #000000;
 }
 
 main {
     font-family: 'Poppins';
-    background-color: #fff;
+    background-color: var(--body-bg);
 }
 
 header {
@@ -63,93 +70,153 @@ element.style {
     --bs-gradient: none;
 }
 
+/* ----------------- HEMOCENTRO ---------------- */
+
 #hemocentro {
     position: relative;
-    width: 100%;
-    height: 520px;
-    background-image: url(./img_index/bg-hemo.png);
-    background-size: cover;
-    margin-top: 98px;
-    background-repeat: no-repeat;
-    /* background-position: 97%;
-    background-color: #d9d9d9;
-    background-attachment: scroll;*/
+    margin: 0 auto;
+    width: 90%;
+    height: 400px;
+    margin-top: 95px;
 }
-
-#hemocentro-comeco {
-    position: absolute;
-    width: 480px;
-    height: 200px;
-    border-radius: 182px;
-    font-size: 60px;
-    font-family: 'Poppins';
-    color: #eaeaea;
-    border: none;
-    font-weight: 600;
-    /*margin-top: -500px;
-    margin-left: 130px;*/
-    margin-top: 90px;
+#img_hemocentro{
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
 }
 
 #hemocentro-titulo {
+    position: absolute;
+    top: 20px;
+    left: 100px;
     color: red;
-    font-size: larger;
-    text-shadow: #010101;
-    font-weight: bold;
     text-align: center;
-    text-shadow: black 2px 2px;
+    text-shadow: 
+        -1.5px -1.5px 0px #000,
+        -1.5px 1.5px 0px #000,
+        1.5px -1.5px 0px #000,
+        1.5px 0px 0px #000;
+}
+#hemocentro-titulo h1{
+    font-size: 80px;
+    font-weight: bold;
 }
 
 #hemocentro-explicacao {
-    color: white;
+    position: absolute;
+    width: 600px;
+    height: auto;
+    top: 150px;
+    left: 180px;
+    color: rgb(13, 217, 239);
+    font-size: 20px;
+    font-weight: bold;
+}
+#hemocentro-explicacao p{
+    text-shadow: 
+        -1.0px -1.0px 0px rgb(0, 0, 0),
+        -1.0px 1.0px 0px rgb(0, 0, 0),
+        1.0px -1.0px 0px rgb(0, 0, 0),
+        1.0px 0px 0px rgb(0, 0, 0);
+}
+/* ------------------ Conteudo principal --------------------- */
+
+#contprinc{
+    width: 88%;
+    margin: 0 auto;
+}
+#PDC{
+    padding-top: 30px;
+    height: auto;
+    width: auto;
     text-align: center;
 }
+#PDC_titulo{
+    font-size: 50px;
+    font-weight: 600;
+}
 
+#primeiro_acc{
+    margin-top: 3%;
+}
+#ultima_acc{
+    margin-bottom: 3%;
+}
 
-/* #CLINICA {
-    margin-top: 360px;
-} */
-
-.accordion {
-    background-color: #5BA2CA;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 50%;
-    border: none;
+.tit_naopode{
+    margin-top: 2px;
+    color: #000;
+    background-color: #3ea5e9;
+    width: 100%;
+    padding: 5px 2% 0 6%;
     text-align: left;
-    outline: none;
-    font-size: 15px;
     transition: 0.4s;
-    position: relative;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.tit_naopode h5{
+    font-size: 25px;
+    font-weight: 500;
+
 }
 
-.active,
-.accordion:hover {
-    background-color: #5BA2CA;
-}
-
-.accordion:after {
+.tit_naopode:after {
     content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
+    color: #fff;
     margin-left: 5px;
-}
-
-.active:after {
+  }
+  
+  .active:after {
     content: "\2212";
+    color: white;
+  }
+.tit_naopode:hover{
+    filter: brightness(110%);
 }
 
-.panel {
-    padding: 0 18px;
-    background-color: #305374;
-    color: white;
+.naopode_cont{
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    position: relative;
-    width: 50%;
+    transition: all 0.2s ease-out;
+    background-color: #837b7b;
+    color: #FFF;
+}
+.naopode_cont img{
+    filter: invert();
+}
+.condicoes{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #97938d;
+    padding-top: 1%;
+}
+.condicoes .itens{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.condicoes .itens p{
+    padding-top: 1%;
+    padding-left: 5%;
+    font-size: 20px;
+}
+.condicoes .itens_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.condicoes .itens_img img{
+    width: 100%;
+    height: 100%;
 }
 
 #acessibilidade {

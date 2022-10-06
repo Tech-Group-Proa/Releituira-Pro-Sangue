@@ -30,10 +30,15 @@ header{
 
 /*-----------------CSS da header bootstrap-----------------*/
 
-
+#doe_agr{
+    text-decoration: none;
+    color: black;
+}
+#doe_agr:hover{
+    color: #fff;
+}
 .navbar-brand:hover{
     color: red;
-    text-decoration: underline;
 }
 
 .nav-link{
@@ -46,7 +51,6 @@ header{
 
 .nav-link:hover{
     color: red;
-    text-decoration: underline;
 }
 
 

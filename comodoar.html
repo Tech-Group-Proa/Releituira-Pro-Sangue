@@ -12,7 +12,7 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style_comodoar.css" type="text/css">
-    <script src="script.js" type="text/javascript"></script>
+
 
 </head>
 
@@ -21,47 +21,43 @@
         <header>
             <nav class="navbar bg-light">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="./img_index/logo_prosangue_header.png" alt="Bootstrap" width="180" height="auto"
-                            style="opacity: 1;">
-                    </a>
-                    <nav class="navbar navbar-expand-lg bg-light">
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html">Início</a>
-                            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">Doação</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Hemocentros</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#fale_conosco">Fale Conosco</a>
-                                    </li>
-                                </ul>
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Buscar"
-                                        aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Doe Agora</button>
-                                </form>
-                            </div>
-
-                        </div>
-                    </nav>
+                  <a class="navbar-brand" href="index.html">
+                    <img src="./img_index/logo_prosangue_header.png" alt="Bootstrap" width="180" height="auto" style="opacity: 1;" id="logo_prosangue"> 
+                  </a>
+                  <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Doação</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="hemocentro.html">Hemocentros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#fale_conosco">Fale Conosco</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search" >
+                          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit"  >Doe Agora</button>
+                        </form>
+                      </div>
+              </nav>
         </header>
 
         <div id="acessibilidade">
-            <input type="checkbox" id="darkmode-toggle" />
-            <label for="darkmode-toggle" onkeypress="modo_escuro()"></label>
+            <input type="checkbox" id="darkmode-toggle" name="theme" onclick="mudar(event)"/>
+            <label for="darkmode-toggle"> </label>
             <button id="aumentar_fonte">A+</button>
             <button id="diminuir_fonte">A-</button>
-        </div>
+          </div>
 
         <nav class="sub_nav">
             <a href="#">
@@ -69,47 +65,48 @@
                     <b>Requisitos para doação</b>
                 </div>
             </a>
-            <a href="#">
-                <div id="nav_cont" class="cont2">
-                    <b>Cuidados pós-doação</b>
-                </div>
-            </a>
-            <a href="#">
+
+            <a href="#naoPodeDoar">
                 <div id="nav_cont" class="cont3">
                     <b>Quem não pode doar</b>
                 </div>
             </a>
+            <a href="#CuidadosPDoar">
+                <div id="nav_cont" class="cont2">
+                    <b>Cuidados pós-doação</b>
+                </div>
+            </a>
         </nav>
         <div id="ghost"></div>
-        <div class="tit_princ">
+        <div class="tit_princ" id="requisitos_doacao">
             <h2>Requisitos básicos para doação</h2>
         </div>
         <div id="contprinc">
             <section class="reqbas">
                 <div class="reqbas_esquerda">
                     <div class="itens">
-                        <div class="itens_img"><img src="./img_index/docs.png" alt="#"></div>
+                        <div class="itens_img"><img src="./img_index/docs.png" alt="#" id="imagem1"></div>
                         <p>Levar documento oficial de identidade com foto;</p>
                     </div>
                     <div class="itens">
-                        <div class="itens_img"><img src="./img_index/idade.png" alt="#"></div>
+                        <div class="itens_img"><img src="./img_index/idade.png" alt="#" id="imagem2"></div>
                         <p>Ter entre 16 a 69 anos.(até 18 com consentimento dos pais);</p>
                     </div>
                     <div class="itens">
-                        <div class="itens_img"><img src="./img_index/condicaosaude.png" alt="#"></div>
+                        <div class="itens_img"><img src="./img_index/condicaosaude.png" alt="#" id="imagem3"></div>
                         <p>Estar em boa condição de saúde;</p>
                     </div>
                     <div class="itens">
-                        <div class="itens_img"><img src="./img_index/peso.png" alt="#"></div>
+                        <div class="itens_img"><img src="./img_index/peso.png" alt="#" id="imagem4"></div>
                         <p>Pesar mais de 50kg;</p>
                     </div>
                     <div class="itens">
-                        <div class="itens_img"><img src="./img_index/jejum.png" alt="#"></div>
+                        <div class="itens_img"><img src="./img_index/jejum.png" alt="#" id="imagem5"></div>
                         <p>Evitar gordura nas últimas 3 horas</p>
                     </div>
                     <div class="itens">
-                        <div class="itens_img"><img src="./img_index/bebidas.png" alt="#"></div>
-                        <p>Não ter ingerido bebida alcoólica</p>
+                        <div class="itens_img"><img src="./img_index/bebidas.png" alt="#" id="imagem6"></div>
+                        <p id="naoPodeDoar">Não ter ingerido bebida alcoólica</p>
                     </div>
                 </div>
                 <aside class="reqbas_direita">
@@ -146,63 +143,48 @@
                 <div class="naopode_cont">
                     <div class="condicoes">
                         <div class="itens">
-                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <div class="itens_img"><img src="img_index/nao.png" alt="nao" id="imagem7"></div>
                             <p>Está com gripe, febre ou infecção;</p>
                         </div>
                         <div class="itens">
-                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <div class="itens_img"><img src="img_index/nao.png" alt="nao" id="imagem8"></div>
                             <p>É portador de sífilis(cacro), Malária ou doença de Chagas;</p>
                         </div>
                         <div class="itens">
-                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <div class="itens_img"><img src="img_index/nao.png" alt="nao" id="imagem9"></div>
                             <p>É alcoólico crônico;</p>
                         </div>
                         <div class="itens">
-                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <div class="itens_img"><img src="img_index/nao.png" alt="nao" id="imagem10"></div>
                             <p>Ingeriu álcool até 3 dias antes da doação;</p>
                         </div>
                         <div class="itens">
-                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <div class="itens_img"><img src="img_index/nao.png" alt="nao" id="imagem11"></div>
                             <p>Possui comportamento de risco para doenças transmissíveis;</p>
                         </div>
                         <div class="itens">
-                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <div class="itens_img"><img src="img_index/nao.png" alt="nao" id="imagem12"></div>
                             <p>Foi ou é usuário de drogas injetáveis;</p>
                         </div>
                         <div class="itens">
-                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <div class="itens_img"><img src="img_index/nao.png" alt="nao" id="imagem13"></div>
                             <p>Tenha contraído hepatite após 10 anos de idade</p>
                         </div>
                         <div class="itens">
-                            <div class="itens_img"><img src="img_index/nao.png" alt="img_index/nao.png"></div>
+                            <div class="itens_img"><img src="img_index/nao.png" alt="nao" id="imagem14"></div>
                             <p>Tenha feito: endoscopia, tatuagem ou piercing em período menor que 12 meses;</p>
                         </div>
                     </div>
-                    <div class="naodoe">
+                    <div class="naodoe" >
                         <div class="tit_naodoe">
                             <h3>Na dúvida, não doe!</h3>
                         </div>
-                        <div class="atencao"><text>Atenção: </text>"Honestidade também salva vidas"</div>
+                        <div class="atencao" ><text>Atenção: </text>"Honestidade também salva vidas"</div>
                     </div>
                 </div>
-                <script>
-                    var acc = document.getElementsByClassName("tit_naopode");
-                    var i;
-
-                    for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("click", function () {
-                            this.classList.toggle("active");
-                            var panel = this.nextElementSibling;
-                            if (panel.style.maxHeight) {
-                                panel.style.maxHeight = null;
-                            } else {
-                                panel.style.maxHeight = panel.scrollHeight + "px";
-                            }
-                        });
-                    }
-                </script>
             </section>
-            <section class="posdoacao">
+
+            <section class="posdoacao" id="CuidadosPDoar">
                 <div class="tit_pos">
                     <h2>Principais cuidados pós-doação</h2>
                 </div>
@@ -285,6 +267,23 @@
 
 
     </main>
+    <script>
+        var acc = document.getElementsByClassName("tit_naopode");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+        <script src="scriptComoDoar.js" type="text/javascript"></script>
 </body>
 
 </html>
