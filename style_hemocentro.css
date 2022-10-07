@@ -37,9 +37,10 @@ header {
 
 .nav-link {
     font-family: 'Poppins';
-    font-size: 17px;
-    color: black;
-    padding-top: 10px;
+    font-size: 19px;
+    margin-right: 13px;
+    color: var(--body-color);
+    padding-top: 9px;
 }
 
 .nav-link:hover {
@@ -70,6 +71,11 @@ element.style {
     --bs-gradient: none;
 }
 
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: var(--header-bg) !important;
+} 
+
 /* ----------------- HEMOCENTRO ---------------- */
 
 #hemocentro {
@@ -77,7 +83,7 @@ element.style {
     margin: 0 auto;
     width: 90%;
     height: 400px;
-    margin-top: 95px;
+    margin-top: 75px;
 }
 #img_hemocentro{
     width: 100%;
