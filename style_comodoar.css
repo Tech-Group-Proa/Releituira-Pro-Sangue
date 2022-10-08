@@ -599,7 +599,7 @@ footer a:hover{
         overflow-x: hidden;
     } */
     #acessibilidade{
-        top: 20rem;
+        top: 15rem;
         width: 15%;
     }
     .sub_nav{
@@ -693,6 +693,24 @@ footer a:hover{
     }
     .texto_pos1{
         width: 80%;
+    }
+
+    footer{
+        height: 160vh;
+    }
+
+    #links_footer_top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #links_footer_bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #redes_sociais{
+        margin: 0;
     }
 }
 @media only screen and (max-width:989px){
