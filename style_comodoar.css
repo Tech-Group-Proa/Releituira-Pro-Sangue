@@ -109,17 +109,17 @@ element.style {
 #acessibilidade{
     position: fixed;
     width: 90px;
-    height: 170px;
+    height: 50px;
     background-color: #010101;opacity: .7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 10px 0px 0px 10px;
     margin-top: 50px;
     right: 0;
-    top: 90px;
-    z-index: 1;
+    top: 75px;
+    z-index: 6;
 }
 
 label{
@@ -175,23 +175,7 @@ label:active:after{
     width: 30px;
 }
 
-#aumentar_fonte{
-    width: 40px;
-    height: auto;
-    opacity: 100%;
-    border-radius: 200px;
-    font-size: 25px;
-    font-weight: 600;
-}
 
-#diminuir_fonte{
-    width: 40px;
-    height: auto;
-    opacity: 100%;
-    border-radius: 200px;
-    font-size: 25px;
-    font-weight: 600;
-}
 
 /* ------------- footer ------------- */
 footer{
